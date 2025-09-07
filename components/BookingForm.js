@@ -1,1 +1,1 @@
-// Booking Form component
+// Booking form component

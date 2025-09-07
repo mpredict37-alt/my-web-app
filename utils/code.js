@@ -1,1 +1,1 @@
-// Code generator helper
+// Code generator
