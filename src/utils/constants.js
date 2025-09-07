@@ -1,0 +1,42 @@
+export const predictorTypes = [
+  {
+    id: "apple",
+    name: "Apple Predictor",
+    icon: "🍏",
+    color: "#4F46E5",
+    description: "Accurate predictions for Apple games. Trusted by thousands.",
+    price: 300,
+  },
+  {
+    id: "aviator",
+    name: "Aviator Predictor",
+    icon: "✈️",
+    color: "#3B82F6",
+    description: "Take flight to your winnings with Aviator insights.",
+    price: 300,
+  },
+  {
+    id: "gems",
+    name: "Gems Predictor 💎",
+    icon: "💎",
+    color: "#8B5CF6",
+    description: "Premium predictions for gems. For exclusive users.",
+    price: 300,
+  },
+  {
+    id: "crash",
+    name: "Crash Predictor",
+    icon: "🚀",
+    color: "#F59E0B",
+    description: "Ride the highs with crash prediction accuracy.",
+    price: 200,
+  },
+  {
+    id: "sureodds",
+    name: "Sure Odds",
+    icon: "✅",
+    color: "#10B981",
+    description: "Sure odds, quick access. Delivered instantly.",
+    price: 100,
+  },
+];
