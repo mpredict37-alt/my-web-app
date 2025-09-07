@@ -1,24 +1,34 @@
 import React from 'react';
-import { FaLock, FaUserCheck, FaWhatsapp } from 'react-icons/fa';
+
+const signals = [
+  {
+    icon: '⭐',
+    label: 'Top-rated by 10,000+ users',
+  },
+  {
+    icon: '🔒',
+    label: 'Secure & Private',
+  },
+  {
+    icon: '🚀',
+    label: 'Lightning-fast AI predictions',
+  },
+  {
+    icon: '💬',
+    label: '24/7 Support',
+  },
+];
 
 export default function TrustSignals() {
   return (
-    <section className="py-10 bg-white flex flex-wrap justify-center gap-8">
-      <div className="flex flex-col items-center">
-        <FaLock className="text-primary text-3xl mb-2" />
-        <span className="font-bold">Secure Payments</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <FaUserCheck className="text-green text-3xl mb-2" />
-        <span className="font-bold">Verified Professionals</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <span className="text-amber text-3xl mb-2">🔍</span>
-        <span className="font-bold">Transparent Bookings</span>
-      </div>
-      <div className="flex flex-col items-center">
-        <FaWhatsapp className="text-green text-3xl mb-2" />
-        <span className="font-bold">WhatsApp Support</span>
+    <section className="py-10 bg-white">
+      <div className="flex flex-wrap justify-center gap-8">
+        {signals.map((s, idx) => (
+          <div key={idx} className="flex items-center gap-3">
+            <span className="text-3xl">{s.icon}</span>
+            <span className="font-semibold text-gray-600">{s.label}</span>
+          </div>
+        ))}
       </div>
     </section>
   );
